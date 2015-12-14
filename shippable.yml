@@ -37,6 +37,9 @@ notifications:
     on_start: always
     on_pull_request: always
  - irc:
-    on_pull_request: true
-    channels:  
+    recipients:  
       - "chat.freenode.net#chandratest"
+    on_failure: always
+    on_start: always
+    on_pull_request: always
+    on_success: always
