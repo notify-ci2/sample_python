@@ -17,3 +17,26 @@ script:
   - which python && coverage xml -o shippable/codecoverage/coverage.xml test.py
   - cat javaExc.txt
   - echo -e "\e[31mHello World\e[0m"
+  
+notifications:
+ - email:
+    recipients:
+      - chandrakanth@shippable.com
+      - vishal.chandru@gmail.com
+      - -- last_committer
+    on_success: change
+    on_failure: change
+    on_start: always
+    on_pull_request: never
+ - slack:
+    account_integration: 566e4536b6bf9f1100524787
+    recipients:
+      - '#slacktestck'
+    on_success: always
+    on_failure: always
+    on_start: always
+    on_pull_request: always
+ - irc:
+    on_pull_request: true
+    channels:  
+      - "chat.freenode.net#chandratest"
