@@ -1,7 +1,8 @@
 language: python
-build_image: shippableimages/ubuntu1204_python
+build_image: shippable/minv2
 python:
   - 2.6
+  - 3.2
   
 install:
   - pip install -r requirements.txt
