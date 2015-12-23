@@ -44,3 +44,4 @@ notifications:
     on_start: always
     on_pull_request: always
     on_success: always
+    
