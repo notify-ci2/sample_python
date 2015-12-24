@@ -39,7 +39,7 @@ notifications:
     #on_pull_request: never
  - irc:
     recipients:  
-      - "chat.freenode.net#chandratest"
+      - "chat.freenode.net#test-irc"
     on_failure: always
     on_start: always
     on_pull_request: always
