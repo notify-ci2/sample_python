@@ -2,7 +2,7 @@ language: python
 build_image: shippable/minv2
 python:
   - 2.6
-  - 3.2
+ # - 3.2
   
 install:
   - pip install -r requirements.txt
@@ -22,21 +22,21 @@ script:
 notifications:
  - email:
     recipients:
-      - chandrakanth@shippable.com
-      - vishal.chandru@gmail.com
-      - -- last_committer
-    on_success: change
-    on_failure: change
-    on_start: always
-    on_pull_request: never
- - slack:
-    account_integration: 566e4536b6bf9f1100524787
-    recipients:
-      - '#slacktestck'
+      - varsha@shippable.com
+      - notify_ci34@yahoo.in
+    #  - -- last_committer
     on_success: always
     on_failure: always
     on_start: always
     on_pull_request: always
+# - slack:
+ #   account_integration: 566e4536b6bf9f1100524787
+  #  recipients:
+   #   - '#slacktestck'
+    #on_success: always
+    #on_failure: always
+    #on_start: change
+    #on_pull_request: never
  - irc:
     recipients:  
       - "chat.freenode.net#chandratest"
