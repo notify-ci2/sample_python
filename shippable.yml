@@ -46,3 +46,5 @@ notifications:
     on_success: always
     
 cache: true
+
+archive: true
