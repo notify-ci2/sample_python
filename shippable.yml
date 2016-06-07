@@ -10,6 +10,10 @@ python:
   - pypy
   - pypy3
   
+env:
+  - FOO=TEST
+  - TEST=BOO
+  
 install:
   - pip install -r requirements.txt
 
